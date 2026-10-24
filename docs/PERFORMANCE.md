@@ -41,3 +41,11 @@ Publication-package verification on the M4 Mini with LLVM 22.1.8: release tests,
 installed CMake consumer, and the extracted library's focused ASan/UBSan suite
 all passed. The instrumented runner exposed PASS only. Style and lifetime
 spelling checks reported no findings.
+
+## Current 289-moment update
+
+See [MOMENT_REDUCTION.md](MOMENT_REDUCTION.md) for the current implementation,
+new paired measurements and explicit numerical differences. The previous tables
+above remain historical evidence. The 289-moment package passed its release
+suite, installed-consumer test and focused ASan/UBSan check (PASS). Actual OBS
+Metal and OpenGL tests passed in the independent plugin project.

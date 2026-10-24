@@ -14,6 +14,10 @@ It minimizes squared distance to pixel quantization intervals, using a bounded
 active-set quadratic solve and an objective-gap stopping estimate. It is a
 specialized image-surface fitter, not a general Bregman solver.
 
+The full 9×9 surface is retained. A 17×17 polynomial-moment curvature model
+guides steps checked against the actual Q20 objective; this can change final
+controls and rounded pixels. Identical channels share a fit.
+
 The speed comes from doing less work: solve control-bound changes in coefficient
 space, reuse prepared basis data, accumulate independent sums contiguously,
 reject losing trials early, and build curvature only when another step is needed.
@@ -42,11 +46,12 @@ Signed residual fitting is also available. Dimensions are limited to 2,048 per
 axis and 524,288 pixels total. A workspace admits one caller at a time; repeated
 fits allocate no storage. The header specifies counts, bounds and failure behavior.
 
-On the measured 1024×512 workload, solver storage is **4.14 MiB**. The latest
-optimization reduced complete CPU-job time on an A18 Pro from **70.0 to 65.7 ms**;
-the smooth 512×512 field improved from **88.7 to 64.6 ms**. These are paired
+On the measured 1024×512 workload, solver storage is **3.74 MiB**. The latest
+optimization reduced complete CPU-job time on an A18 Pro from **71.4 to 57.0 ms**;
+the smooth 512×512 field improved from **67.4 to 58.1 ms**. These are paired
 comparisons with the preceding implementation, not claims against other libraries.
-See [algorithm](docs/ALGORITHM.md) and [measurements](docs/PERFORMANCE.md).
+See [algorithm](docs/ALGORITHM.md), [moment reduction and its numerical
+tradeoffs](docs/MOMENT_REDUCTION.md), and [earlier measurements](docs/PERFORMANCE.md).
 
 This is an experimental library. It is the numerical core used by the separate
 Bernstein OBS effect; OBS and codec machinery are not dependencies or part of

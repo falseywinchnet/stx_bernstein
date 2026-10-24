@@ -13,8 +13,9 @@ objective, and lower objective value does not guarantee more exact rounded pixel
 
 The implementation prepares mass-preserving Q20 axis weights, initializes the
 controls, and computes the interval objective and half-gradient. A primal-feasible
-active-set solve handles control bounds within the 81-dimensional quadratic
-model. The true image objective accepts or rejects each line-search trial.
+active-set solve handles control bounds within an 81-dimensional quadratic
+model. Its curvature uses 289 exact-polynomial moments as an approximation
+to the Q20 curvature; see MOMENT_REDUCTION.md. The true image objective accepts or rejects each line-search trial.
 
 A tangent minimized over the control box estimates the remaining objective gap:
 `2 sum_i g[i] (c[i] - bound[i])`, where `g` is the stored half-gradient and

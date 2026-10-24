@@ -30,6 +30,11 @@ typedef struct stx_bernstein_stats {
    estimate is at most max(1e-8, 1e-10 * cost). Floating-point reduction order is
    explicit; results are not promised to be identical across compilers or
    architectures.
+   Curvature uses a 17-by-17 exact-polynomial moment approximation to the
+   Q20 basis; the objective, gradient and step acceptance retain the Q20 basis.
+   Finite-iteration controls may differ from an exact-curvature solve.
+   Identical input channels share one solve. Work counters count performed
+   operations; initial/final costs include all three channels.
    workspace_bytes is owned object plus vector capacities, excluding allocator
    overhead and bounded call-stack locals (< 8 KiB). */
 stx_bernstein_workspace* stx_bernstein_create(size_t width, size_t height);
