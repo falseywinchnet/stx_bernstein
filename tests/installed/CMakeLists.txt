@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.21)
+project(bernstein_consumer LANGUAGES CXX)
+find_package(stx_bernstein CONFIG REQUIRED)
+add_executable(consumer main.cpp)
+target_link_libraries(consumer PRIVATE stx::bernstein)
+enable_testing()
+add_test(NAME consumer COMMAND consumer)

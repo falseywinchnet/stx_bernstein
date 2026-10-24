@@ -1,0 +1,10 @@
+{
+  "origin": "Standalone Bernstein decomposition research, extracted 2026-10-23",
+  "original_sha256": {
+    "candidate.cpp": "a40db85292a5b4b2668a1be13b576167111935d047636d2e13713b1c57363303",
+    "whole_surface.h": "97e0b6b87b13787a15c31d250abab566f3205d0c7f4db4612e28bac68244620e",
+    "checks.cpp": "fd38ff80b3fa15e0783c774e629d04ebc46b3dbe6cb722c3f892ceaa8aa41301",
+    "reference/surface_fit.cpp": "4c5a3d4ef6b47e832e887c8c7375a6ad008503faf6c5c0c4e5597c4f14886ab9",
+    "reference/surface_fit.h": "c5c4111e58f5dcb2191b58f5d2168f75dbccf4f555f6d205390a4d7e3682d641"
+  }
+}
