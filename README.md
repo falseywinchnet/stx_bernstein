@@ -23,6 +23,17 @@ space, reuse prepared basis data, accumulate independent sums contiguously,
 reject losing trials early, and build curvature only when another step is needed.
 No platform intrinsics, image subsampling, or blanket fast-math.
 
+## See the fit, then measure what remains
+
+[![Residual entropy comparison](demonstrations/results/entropy.png)](demonstrations/README.md)
+
+[Two reproducible demonstrations](demonstrations/README.md) compare conventional
+polynomial least squares with the quantization-aware fit, then measure signed
+residual entropy. On the synthetic smooth field, the fitted surface leaves
+**18 nonzero channel samples versus 189** for least squares. Foreground objects,
+texture and noise show the limits too: this objective does not guarantee lower
+entropy, and it does not identify foreground automatically.
+
 ## Build
 
 ```sh

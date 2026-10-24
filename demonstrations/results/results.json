@@ -1,0 +1,228 @@
+{
+  "dimensions": [
+    256,
+    128
+  ],
+  "seed": 20261024,
+  "python": "3.12.8",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "matplotlib": "3.10.8",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "library_sha256": "cf597be9db9fbda9aa76c0a706b3db58fec12b919ccdc78ae54d3b09f448ba1b",
+  "script_sha256": "53657b3cd28b505c85c36839dfab29ad4ea3981cce53c7a6420e681acefdc747",
+  "cases": {
+    "smooth": {
+      "input_sha256": "7da6c7034f428eb1ba58aff0ab1f1a20a48e9505a00b39d5f7530a4fe5c9a0ec",
+      "source_entropy_bits_per_sample": 7.058666613801972,
+      "workspace_bytes": 553056,
+      "methods": {
+        "Least squares": {
+          "residual_entropy_bits_per_sample": 0.021979483278786977,
+          "zero_residual_percent": 99.8077392578125,
+          "rounded_rmse": 0.04384754750125713,
+          "interval_mean_squared_error": 7.382455576251611e-08,
+          "continuous_rmse": 0.2885406622366183,
+          "rendered_min": 35,
+          "rendered_max": 218,
+          "known_background_rmse": 0.006592838940688979,
+          "control_min": 35.118053845037174,
+          "control_max": 217.97742422319064
+        },
+        "Bounded least squares": {
+          "residual_entropy_bits_per_sample": 0.021979483278786977,
+          "zero_residual_percent": 99.8077392578125,
+          "rounded_rmse": 0.04384754750125713,
+          "interval_mean_squared_error": 7.382455576222841e-08,
+          "continuous_rmse": 0.28854066223661823,
+          "rendered_min": 35,
+          "rendered_max": 218,
+          "known_background_rmse": 0.006592838940680959,
+          "control_min": 35.11805384503701,
+          "control_max": 217.97742422319092
+        },
+        "stx_bernstein": {
+          "residual_entropy_bits_per_sample": 0.00267482558854007,
+          "zero_residual_percent": 99.981689453125,
+          "rounded_rmse": 0.013531646934131853,
+          "interval_mean_squared_error": 7.893958240613587e-10,
+          "continuous_rmse": 0.28858903521545975,
+          "rendered_min": 35,
+          "rendered_max": 218,
+          "known_background_rmse": 0.005014659941332638,
+          "control_min": 35.08203125,
+          "control_max": 217.94921875
+        }
+      }
+    },
+    "foreground": {
+      "input_sha256": "a0efb6a92d31660d37bd4bdb4f52ea5f61366ba456c618c73969e6d6e14bc435",
+      "source_entropy_bits_per_sample": 6.705715462319559,
+      "workspace_bytes": 553056,
+      "methods": {
+        "Least squares": {
+          "residual_entropy_bits_per_sample": 5.569760737654202,
+          "zero_residual_percent": 14.958699544270834,
+          "rounded_rmse": 17.69932838214593,
+          "interval_mean_squared_error": 302.8996513520737,
+          "continuous_rmse": 17.697352101942492,
+          "rendered_min": 3,
+          "rendered_max": 254,
+          "known_background_rmse": 37.97774564901184,
+          "control_min": -162960.82305616955,
+          "control_max": 183736.14327258625
+        },
+        "Bounded least squares": {
+          "residual_entropy_bits_per_sample": 6.210650164233857,
+          "zero_residual_percent": 6.404622395833333,
+          "rounded_rmse": 26.194097957789378,
+          "interval_mean_squared_error": 669.4523536131938,
+          "continuous_rmse": 26.192827706393608,
+          "rendered_min": 31,
+          "rendered_max": 231,
+          "known_background_rmse": 29.00280994599673,
+          "control_min": -5.684341886080802e-14,
+          "control_max": 255.00000000000003
+        },
+        "stx_bernstein": {
+          "residual_entropy_bits_per_sample": 6.2367561891562096,
+          "zero_residual_percent": 5.401611328125,
+          "rounded_rmse": 26.19538764248841,
+          "interval_mean_squared_error": 669.4027832977986,
+          "continuous_rmse": 26.193837026189602,
+          "rendered_min": 30,
+          "rendered_max": 231,
+          "known_background_rmse": 29.04487832525682,
+          "control_min": 0.0,
+          "control_max": 255.0
+        }
+      }
+    },
+    "texture": {
+      "input_sha256": "51e56d82c907d193e76dfbdb32585af22645a221088045598fd5b8156e5345de",
+      "source_entropy_bits_per_sample": 7.125762446639253,
+      "workspace_bytes": 553056,
+      "methods": {
+        "Least squares": {
+          "residual_entropy_bits_per_sample": 4.646086422228971,
+          "zero_residual_percent": 2.473958333333333,
+          "rounded_rmse": 9.194061220089303,
+          "interval_mean_squared_error": 76.46243614343538,
+          "continuous_rmse": 9.190726722324719,
+          "rendered_min": 35,
+          "rendered_max": 217,
+          "known_background_rmse": 0.323987250019406,
+          "control_min": -1678.3407436436617,
+          "control_max": 1892.305937441413
+        },
+        "Bounded least squares": {
+          "residual_entropy_bits_per_sample": 4.6359548323662585,
+          "zero_residual_percent": 2.492268880208333,
+          "rounded_rmse": 9.196185307982327,
+          "interval_mean_squared_error": 76.48881533217003,
+          "continuous_rmse": 9.192280323133243,
+          "rendered_min": 37,
+          "rendered_max": 215,
+          "known_background_rmse": 0.23350014011516956,
+          "control_min": 0.0,
+          "control_max": 255.0
+        },
+        "stx_bernstein": {
+          "residual_entropy_bits_per_sample": 4.635465657724584,
+          "zero_residual_percent": 2.4932861328125,
+          "rounded_rmse": 9.196250018583491,
+          "interval_mean_squared_error": 76.48879740063661,
+          "continuous_rmse": 9.19228132700882,
+          "rendered_min": 37,
+          "rendered_max": 215,
+          "known_background_rmse": 0.23040127517123185,
+          "control_min": 0.0,
+          "control_max": 255.0
+        }
+      }
+    },
+    "noise": {
+      "input_sha256": "6d3a7b3de1375e22a5dbe494c2a0307ecb4889b68e6f5d75843c0bf1dfd7cd1b",
+      "source_entropy_bits_per_sample": 7.146956556354939,
+      "workspace_bytes": 553056,
+      "methods": {
+        "Least squares": {
+          "residual_entropy_bits_per_sample": 5.361433314473754,
+          "zero_residual_percent": 3.9703369140625,
+          "rounded_rmse": 9.960122005016691,
+          "interval_mean_squared_error": 91.43188748240398,
+          "continuous_rmse": 9.955299017543663,
+          "rendered_min": 33,
+          "rendered_max": 218,
+          "known_background_rmse": 0.44524809758739126,
+          "control_min": -6601.004189001147,
+          "control_max": 5859.557015086405
+        },
+        "Bounded least squares": {
+          "residual_entropy_bits_per_sample": 5.361725824740148,
+          "zero_residual_percent": 3.9662679036458335,
+          "rounded_rmse": 9.961832578248707,
+          "interval_mean_squared_error": 91.45312677082599,
+          "continuous_rmse": 9.956411668146414,
+          "rendered_min": 33,
+          "rendered_max": 218,
+          "known_background_rmse": 0.407781073207754,
+          "control_min": -3.552713678800501e-15,
+          "control_max": 255.0
+        },
+        "stx_bernstein": {
+          "residual_entropy_bits_per_sample": 5.361709035400651,
+          "zero_residual_percent": 3.961181640625,
+          "rounded_rmse": 9.961633962579988,
+          "interval_mean_squared_error": 91.45295020543767,
+          "continuous_rmse": 9.956420868243573,
+          "rendered_min": 33,
+          "rendered_max": 218,
+          "known_background_rmse": 0.4089757989944654,
+          "control_min": 0.0,
+          "control_max": 255.0
+        }
+      }
+    },
+    "unstructured": {
+      "input_sha256": "b5f43ec079d84c5cd74258ed5b5670448b3b17e5f24a2007e41c23b709ef8bd8",
+      "source_entropy_bits_per_sample": 7.9942761683096855,
+      "workspace_bytes": 553056,
+      "methods": {
+        "Least squares": {
+          "residual_entropy_bits_per_sample": 8.024801608941937,
+          "zero_residual_percent": 0.3570556640625,
+          "rounded_rmse": 73.77228453432502,
+          "interval_mean_squared_error": 5378.624719730626,
+          "continuous_rmse": 73.77082371882048,
+          "rendered_min": 85,
+          "rendered_max": 172,
+          "control_min": -57561.010047006996,
+          "control_max": 66481.91522554442
+        },
+        "Bounded least squares": {
+          "residual_entropy_bits_per_sample": 8.018399561439521,
+          "zero_residual_percent": 0.372314453125,
+          "rounded_rmse": 73.79458894405386,
+          "interval_mean_squared_error": 5382.058996716353,
+          "continuous_rmse": 73.79426604328418,
+          "rendered_min": 101,
+          "rendered_max": 161,
+          "control_min": -7.105427357601002e-15,
+          "control_max": 255.0
+        },
+        "stx_bernstein": {
+          "residual_entropy_bits_per_sample": 8.018389499771784,
+          "zero_residual_percent": 0.36722819010416663,
+          "rounded_rmse": 73.79438899349887,
+          "interval_mean_squared_error": 5382.0588639957705,
+          "continuous_rmse": 73.79426694532569,
+          "rendered_min": 101,
+          "rendered_max": 161,
+          "control_min": 0.0,
+          "control_max": 255.0
+        }
+      }
+    }
+  }
+}
